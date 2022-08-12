@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, Text, FlatList} from 'react-native';
 import {useSelector} from 'react-redux';
+import { NEW_UPDATE_DOG } from '../appRoutes';
 import {Button} from '../components/button';
 import {dogListSelector} from '../store/selectors/dogSelector';
 import {styles} from '../Style';
@@ -13,7 +14,7 @@ const DogsListing = props => {
     <DogDetail item={item} index={index} navigation={navigation}/>
   );
 
-  const goToAdd = () => navigation.navigate("NewDog")
+  const goToAdd = () => navigation.navigate(NEW_UPDATE_DOG)
 
   return (
     <View style={styles.rootStyle}>

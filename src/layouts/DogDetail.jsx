@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, Text, Alert} from 'react-native';
 import {useDispatch} from 'react-redux';
+import { NEW_UPDATE_DOG } from '../appRoutes';
 import {Button} from '../components/button';
 import {deleteDog} from '../store/slices/dogSlice';
 import {styles} from '../Style';
@@ -33,7 +34,7 @@ export const DogDetail = props => {
   };
 
   const onEdit = () => {
-    navigation.navigate('NewDog', {
+    navigation.navigate(NEW_UPDATE_DOG, {
       dogData: item,
       index,
     });

@@ -1,0 +1,18 @@
+{
+    "dogs": [
+        {
+            "name": "Amber",
+            "color": "Brown",
+            "breed": "German Sheperd",
+            "age": "5",
+            "gender": "Female"
+        },
+        {
+            "name": "Rocky",
+            "color": "Brown",
+            "breed": "German Sheperd",
+            "age": "0.6",
+            "gender": "Male"
+        }
+    ]
+}

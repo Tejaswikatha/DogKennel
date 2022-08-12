@@ -19,7 +19,8 @@ export const styles = StyleSheet.create({
         flexDirection: "column"
     },
     flexGrow: {
-        flexGrow: 1
+        flexGrow: 1,
+        flexBasis: 1
     },
     buttonStyle: {
         borderRadius: 5,

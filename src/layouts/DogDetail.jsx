@@ -5,6 +5,16 @@ import {Button} from '../components/button';
 import {deleteDog} from '../store/slices/dogSlice';
 import {styles} from '../Style';
 
+export const ViewText = (props) => {
+    const {label, value} = props;
+    return (
+        <View style={styles.flexRow}>
+            <Text style={[styles.flexGrow, {fontSize: 16}]}>{label}:</Text>
+            <Text style={styles.flexGrow}>{value}</Text>
+        </View>
+    )
+}
+
 export const DogDetail = props => {
   const {item, index, navigation} = props;
   const {age, breed, color, gender, name} = item;
@@ -31,12 +41,14 @@ export const DogDetail = props => {
 
   return (
     <View style={styles.dogDetailStyle}>
-      <Text>Name: {name}</Text>
-      <Text>Age: {age}</Text>
-      <Text>Breed: {breed}</Text>
-      <Text>Color: {color}</Text>
-      <Text>Gender: {gender}</Text>
-      <View style={styles.flexRow}>
+      <View style={{margin: 5}}>
+        <ViewText label="Name" value={name}/>
+        <ViewText label="Age" value={age}/>
+        <ViewText label="Breed" value={breed}/>
+        <ViewText label="Color" value={color}/>
+        <ViewText label="Gender" value={gender}/>
+        </View>
+        <View style={styles.flexRow}>
         <Button
           label="Delete"
           mode="outlined"

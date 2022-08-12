@@ -18,9 +18,11 @@ const NewDog = props => {
     color: '',
   };
 
-  navigation.setOptions({
-    title: dogData ? 'Edit Dog Detail' : 'Add New Dog',
-  });
+  React.useLayoutEffect(() => {
+    navigation.setOptions({
+      title: dogData ? 'Edit Dog Detail' : 'Add New Dog',
+    });
+  }, []);
 
   const dispatch = useDispatch();
 

@@ -11,5 +11,8 @@
 ### Android
 
 1. yarn android (It will start the js metro bundler and run the application on emulator)
-2. or run yarn start 
-3. open android folder in android studio and wait till the sync process and select the virtual device and click on play/run
+
+### or
+
+1. yarn start 
+2. open android folder in android studio and wait till the sync process and select the virtual device and click on play/run

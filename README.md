@@ -3,8 +3,9 @@
 2. Need Java version 11 or greater than 11
 
 ### Initial SetUp
-1. yarn
-2. cd ios - pod install (ios)
+1. Clone the project
+2. cd project_name
+3. yarn
 
 ### Running the application
 
